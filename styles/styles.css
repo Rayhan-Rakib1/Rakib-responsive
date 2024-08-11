@@ -12,7 +12,7 @@
 .display-flex{
     display: flex;
 }
-.navbar, .banner, main, .bmi-section, .team{
+.navbar, .banner, main, .bmi-section, .team, .footer-section, .line{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -223,14 +223,33 @@ form{
     border-radius: 18px;
 }
 
+/* footer section */
+footer{
+    background: rgba(255, 255, 255, 0.1);
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+}
+.fitness-2{
+    color: rgb(230, 83, 60);
+    font-size: 4rem;
+}
+.footer-description{
+    text-align: center;
+    padding: 35px;
+}
 /* responsive media query */
 
 /* small devise */
 @media screen and (max-width: 576px) {
-    .banner{
+    .banner, .habits-images, .run-section, .bmi-section, .footer-section{
         flex-direction: column;
+        justify-content: center;
     }
-    
+    .trainers{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* medium devise */
