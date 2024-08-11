@@ -2,6 +2,244 @@
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+/* shared style */
+.display-flex{
+    display: flex;
+}
+.navbar, .banner, main, .bmi-section, .team{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.btn-primary{
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 16px 40px;
+    border: none;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.title-center{
+    align-items: center; 
+    display: flex;
+    flex-direction: column;  
+  }
+.title{
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 4px 0px;
+}
+.description{
+     font-size: 1rem;
+     font-weight: 400;
+     color: rgba(255, 255, 255, 0.5);
+}
+/* header section */
+
+header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+
+
+/* navbar */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 57px;
+}
+.fitness{
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+}
+.nav-item{
+    list-style: none;
+    margin-right: 47px ;
+    /* padding: 12px; */
+}
+.nav-links{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 12px;
+}
+.home{
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    padding: 8px 20px;
+
+}
+.nav-link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+/* banner section */
+.banner-title{
+    font-weight: 900;
+    font-size: 4.5rem ;
+}
+.banner-content{
+    margin-right: 160px;
+}
+.btn-download{
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    padding: 16px 40px;
+    color: rgb(255, 255, 255);
+    background: black;
+}
+
+/* habits section */
+.habits-section{
+    margin: 100px 0px;
+}
+
+.habits-img img{
+    border-radius: 100px;
+}
+.habits-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* run section */
+.run-section{
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+}
+.run{
+    margin-top: 40px;
+    margin-right: 165px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+.run-section img{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+    margin: 30px 30px 30px;
+}
+.run button{
+    margin-top: 30px;
+}
+
+/* bMI calculator section */
+.bmi{
+    margin-top: 63px;
+}
+.bmi-calculator{
+    background: rgb(34, 34, 34);
+    margin-bottom: 90px;
+}
+
+/* bmi table */
+.Calculator{
+   /* padding-top: 52px;
+    padding-bottom: 133px; */
+}
+table{
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+}
+caption{
+    padding: 14px;
+}
+/* bmi form */
+.input-field{
+    border-radius: 8px;
+    padding: 12px 40px 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    margin-bottom: 12px;
+}
+.activity{
+    padding: 12px 40px 12px 20px;
+    border-radius: 8px;
+    padding-right: 275px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 34px;
+}
+.bmi-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+}
+form{
+   margin-bottom: 50px; 
+}
+/* team section */
+.trainers-container{
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 90px;
+}
+.trainers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    margin: 20px 0px;
+}
+ 
+.trainer-1{
+    background: url(../images/trainer1.jpg);
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+}
+.trainer-2{
+    background-image: url(../images/trainer2.png);
+    border-radius: 18px;
+}
+.trainer-3{
+    background-image: url(../images/trainer3.png);
+    border-radius: 18px;
+}
+.trainer-4{
+    background-image: url(../images/trainer4.png);
+    border-radius: 18px;
+}
+.trainer-5{
+    background-image: url(../images/trainer5.png);
+    border-radius: 18px;
+}
+.trainer-6{
+    background-image: url(../images/trainer6.png);
+    border-radius: 18px;
+}
+
+/* responsive media query */
+
+/* small devise */
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column;
+    }
+    
+}
+
+/* medium devise */
+@media screen and (min-width: 576px) and (max-width: 993px) {
+    
+}
+
+
+/* large devise */
+@media screen and (min-width: 993px) {
+    
 }
