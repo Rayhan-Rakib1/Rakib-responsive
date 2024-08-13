@@ -1,40 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/styles.css">
     <title>Fitness responsive</title>
 </head>
+
 <body class="inter-font">
-     <header>
+    <header>
         <nav class="navbar display-flex">
             <h3 class="fitness">Fitness</h3>
-            <ul class="nav-links display-flex">           
+            <ul class="nav-links display-flex">
                 <li class="nav-item"><a href="" class="nav-link home">Home</a></li>
                 <li class="nav-item"><a href="" class="nav-link ">Service</a></li>
                 <li class="nav-item"><a href="" class="nav-link"> Contact</a></li>
                 <li class="nav-item"><a href="" class="nav-link">About</a></li>
-                </ul>
-         </nav>
-         <div class="banner display-flex">
+            </ul>
+            <i class=" menu fa-solid fa-bars"></i>
+        </nav>
+        <div class="banner display-flex">
             <div class="banner-content">
-                <h1 class="banner-title">Get body in <br><span class="shape">shape</span>& stay <br> healthy </h1>
-            <p class="description">A huge selection of health and fitness content, healthy  recipes and transformation stories to help you get fit and stay fit!</p>
-            <button class="btn-primary">Join Club Now!</button>
-            <button class="btn-download">Download App</button>
+                <h1 class="banner-title">Get body in <br><span class="shape">shape</span> & stay <br> healthy </h1>
+                <p class="description">A huge selection of health and fitness content, healthy recipes and
+                    transformation stories to help you get fit and stay fit!</p>
+                <button class="btn-primary">Join Club Now!</button>
+                <button class="btn-download">Download App</button>
             </div>
-            <img src="images/Images 2.png" alt="">
-         </div>
-     </header>
-     <main>
+
+            <div class="image">
+                <button id="workouts-video" class="">
+                    <span id="number">500+</span> <br>
+                    <span class="description">Free Workout Videos</span>
+                </button>
+                <img src="images/Images 2.png" alt="">
+                <button id="tutorial-video" class="">
+                    <span id="number">350+</span> <br>
+                    <span class="description">Video tutorial</span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="programs-container">
+            <div class="title-section title-center">
+                <h1 class="title">Explore my programs</h1>
+                <p class="description">The programs I offer are often interdependent and divided into 4 closely related
+                    fields that often depend on each other. <br> Explore them in more detail and get acquainted with my
+                    offer. Also, for more information feel free to contact me via the form at the bottom of the page.
+                </p>
+            </div>
+
+            <div class="programs">
+                <div class="program">
+                    <h1>Personal training</h1>
+                    <p class="description">Personal training is there to help you achieve certain fitness goals,
+                        including but not limited to weight loss, strength, toning, or overall health management. Since
+                        each of us has an extremely different fitness level than personal training requires an
+                        individual approach.</p>
+                </div>
+
+                <div class="program">
+                    <h1>Online training</h1>
+                    <p class="description">Mostly because of the pandemic, people realized it is much more
+                        cost-effective, time-saving and flexible to train in your own home with an expert trainer of
+                        your choice. After you are done, just hop in the shower and some clean clothes, not to mention
+                        your own kitchen is just a step away!</p>
+                </div>
+
+                <div class="program">
+                    <h1 class="">Kinesitherapy</h1>
+                    <p class="description">Kinesitherapy is defined as movement therapy. It is based on the knowledge of
+                        biomechanics and pathologies of the musculoskeletal system, which help diagnose various causes
+                        of your symptoms. Moreover, the use of muscular relaxation techniques, along with active and
+                        passive stretching or mobilizations releases all release tension that limits mobility in your
+                        joints and causes all your symptoms. Tension limit the mobility of your joints and cause your
+                        symptoms.</p>
+                </div>
+
+                <div class="program">
+                    <h1>Physical therapy</h1>
+                    <p class="description">Physical therapy is for everyone experiencing debilitating pain or limitation
+                        in scope of their movements due to injury. Also, the focus can be on prevention and care. For
+                        example, if you have chronic lower back pain and you want to avoid injury or further pain in the
+                        future, I might be able to help you build strength and use strategies to protect your physical
+                        health and well-being.</p>
+                </div>
+
+            </div>
+            <div class="explore">
+                <button class="explore-btn">
+                    <h1>Explore More</h1>
+                </button>
+            </div>
+        </section>
+
         <section class="habits-section">
             <div class="title-center">
                 <h1 class="title">Change Your Habits</h1>
-                <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of
+                    income or access to a gym.</p>
             </div>
             <section class="habits-images display-flex">
                 <div class="habits-img">
@@ -61,129 +135,147 @@
         </section>
         <section class="run-section  display-flex">
             <div class="run">
-                <h3 class="title">Run an Extra 
+                <h3 class="title">Run an Extra
                     Mile Easily</h3>
-                    <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
-                    <button class="btn-primary">Join Now</button>
+                <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of
+                    income or access to a gym. With hundreds of professional workouts.</p>
+                <button class="join btn-primary">Join Now</button>
             </div>
             <img src="images/run.jpg" alt="">
         </section>
-     </main>
-     
-        <div class="title-center bmi">
-            <h1 class="title">BMI Calculator</h1>
-            <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
-        </div>
-        <section class="bmi-calculator">
-            <div class="bmi-section">
- 
-                <div class="Calculator">
-                  <table>
+    </main>
+
+    <div class="title-center bmi">
+        <h1 class="title">BMI Calculator</h1>
+        <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or
+            access to a gym.</p>
+    </div>
+    <section class="bmi-calculator">
+        <div class="bmi-section">
+
+            <div class="Calculator">
+                <table>
                     <h1>BMI Calculator Chart</h1>
                     <thead>
                         <tr>
                             <th>BMI </th>
                             <th>Weight Status</th>
                         </tr>
-                     </thead>
-                        <tbody>
-                            <tr>
-                                <td>Below 18.5</td>
-                                <td>Below 18.5</td>
-                            </tr>
-                            <tr>
-                                <td>18.5 - 24.9</td>
-                                <td>Healthy</td>
-                            </tr>
-                            <tr>
-                                <td>25.0 - 29.9</td>
-                                <td>Overweight</td>
-                            </tr>
-                            <tr>
-                                <td>30.0 - and Above</td>
-                                <td>Obese</td>
-                            </tr>
-                        </tbody>
-                   
-                  </table>
-                </div>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Below 18.5</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 - and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </tbody>
 
-                <div>
-                 <h1>Calculate your BMI</h1>
-                 <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
-                 <form>
+                </table>
+            </div>
+
+            <div>
+                <h1>Calculate your BMI</h1>
+                <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of
+                    income or access to a gym. </p>
+                <form>
                     <input class="input-field" type="hight" name="" id="" placeholder="Height/cm">
                     <input class="input-field" type="text" placeholder="Weight/kg"><br>
                     <input class="input-field" type="text" placeholder="age">
                     <input class="input-field" type="text" placeholder="sex"><br>
                     <input class="activity" type="text" placeholder="Select an activity factor"><br>
                     <button class="btn-primary">Calculate</button>
-                 </form>
-                </div>
-                
+                </form>
             </div>
-        </section>
 
-        <section class="team">
-            <div class="title-center">
-                <h1 class="title">Meet Our Team</h1>
-            <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
-            </div>
-            <div class="trainers-container">
-                <div class="trainers">
-                    <div class="trainer-1">
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="title-center">
+            <h1 class="title">Meet Our Team</h1>
+            <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income
+                or access to a gym.</p>
+        </div>
+        <div class="trainers-container">
+            <div class="trainers">
+                <div class="trainer-1">
+                    <div class="text">
                         <h3>Jerome Bell</h3>
-                        <p>Trainer</p>
+                        <p class="description">Trainer</p>
                     </div>
-                    <div class="trainer-2">
+                </div>
+                <div class="trainer-2">
+                    <div class="text">
                         <h3>Cameron Wil</h3>
-                        <p>Trainer</p>
+                        <p class="description">Trainer</p>
                     </div>
-                    <div class="trainer-3">
+                </div>
+                <div class="trainer-3">
+                    <div class="text">
                         <h3>Darrell Steward</h3>
-                        <p>Trainer</p>
+                        <p class="description">Trainer</p>
                     </div>
-                    <div class="trainer-4">
+                </div>
+                <div class="trainer-4">
+                    <div class="text">
                         <h3>Dianne Russell</h3>
-                        <p>Trainer</p>
+                        <p class="description">Trainer</p>
                     </div>
-                    <div class="trainer-5">
-                        <h3>Cody Fisher   </h3>
-                        <p>Trainer</p>
+                </div>
+                <div class="trainer-5">
+                    <div class="text">
+                        <h3>Cody Fisher </h3>
+                        <p class="description">Trainer</p>
                     </div>
-                    <div class="trainer-6">
+                </div>
+                <div class="trainer-6">
+                    <div class="text">
                         <h3>Theresa Webb</h3>
-                        <p>Trainer</p>
+                        <p class="description">Trainer</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer>
-            <section class="footer-section">
-                <div>
-                    <h1 class="fitness-2">Fitness</h1>
-                    <p class="description">We believe fitness should be accessible to everyone,<br>  everywhere, regardless of     income or access to a gym. <br> With hundreds of professional workouts.</p>
-                </div>
-                <div>
-                    <h2>Get Started</h2>
-                    <p class="description">Service</p>
-                    <p class="description">Contact Us</p>
-                    <p class="description">Affiliate Program</p>
-                    <p class="description">About Us</p>
-                </div>
-                <div>
-                    <h2>Get Started</h2>
-                    <p class="description">Fitness</p>
-                    <p class="description">Platform</p>
-                    <p class="description">Workout Library</p>
-                    <p class="description">App Design</p>
-                </div>
-            </section>
-           <div class="line">
+    <footer>
+        <section class="footer-section">
+            <div>
+                <h1 class="fitness-2">Fitness</h1>
+                <p class="description">We believe fitness should be accessible to everyone,<br> everywhere, regardless
+                    of income or access to a gym. <br> With hundreds of professional workouts.</p>
+            </div>
+            <div>
+                <h2>Get Started</h2>
+                <p class="description">Service</p>
+                <p class="description">Contact Us</p>
+                <p class="description">Affiliate Program</p>
+                <p class="description">About Us</p>
+            </div>
+            <div>
+                <h2>Get Started</h2>
+                <p class="description">Fitness</p>
+                <p class="description">Platform</p>
+                <p class="description">Workout Library</p>
+                <p class="description">App Design</p>
+            </div>
+        </section>
+        <div class="line">
             <hr>
             <p class="description footer-description">All right reserved @Fitness 2024</p>
-           </div>
-        </footer>
+        </div>
+    </footer>
 </body>
+
 </html>
